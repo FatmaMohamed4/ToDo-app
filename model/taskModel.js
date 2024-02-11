@@ -9,7 +9,8 @@ const taskSchema = new mongoose.Schema({
     ref: 'User' // Reference to the User model
 }
 } ,
-{ validateBeforeSave: true });
+{ validateBeforeSave: true }, 
+{timestamps : true});
 
 const Task = mongoose.model('Task', taskSchema);
 
