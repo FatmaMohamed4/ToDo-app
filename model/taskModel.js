@@ -8,8 +8,7 @@ const taskSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User' // Reference to the User model
 }
-} ,
-{ validateBeforeSave: true }, 
+} , 
 {timestamps : true});
 
 const Task = mongoose.model('Task', taskSchema);
